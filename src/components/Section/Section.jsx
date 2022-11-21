@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Section, Title } from './Section.styled';
 
 const PhonebookSection = ({ title, children }) => {
@@ -10,3 +11,8 @@ const PhonebookSection = ({ title, children }) => {
 };
 
 export default PhonebookSection;
+
+PhonebookSection.propTypes = {
+  title: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+};
